@@ -1,0 +1,115 @@
+/* ---------------------------------------------
+
+    project name: Napasha Way Essential Oils
+
+    _typography.scss
+
+------------------------------------------------ */
+
+/*  Modular Scale */
+
+$ms1100-h1: 1.772em;
+$ms1100-h2: 1.611em;
+$ms1100-h3: 1.464em;
+$ms1100-h4: 1.331em;
+$ms1100-h5: 1.210em;
+$ms1100-h6: 1.100em;
+
+$ms1150-h1: 2.313em;
+$ms1150-h2: 2.011em;
+$ms1150-h3: 1.749em;
+$ms1150-h4: 1.528em;
+$ms1150-h5: 1.326em;
+$ms1150-h6: 1.150em;
+
+$ms1200-h1: 2.986em;
+$ms1200-h2: 2.488em;
+$ms1200-h3: 2.074em;
+$ms1200-h4: 1.728em;
+$ms1200-h5: 1.440em;
+$ms1200-h6: 1.200em;
+
+$ms1333-h1: 5.610em;
+$ms1333-h2: 4.209em;
+$ms1333-h3: 3.157em;
+$ms1333-h4: 2.369em;
+$ms1333-h5: 1.777em;
+$ms1333-h6: 1.333em;
+
+$ms1618-h1: 6.854em;
+$ms1618-h2: 4.236em;
+$ms1618-h3: 2.618em;
+$ms1618-h4: 1.618em;
+$ms1618-h5: 1.333em;
+$ms1618-h6: 1.200em;
+
+/* end modular scale */
+
+
+body {
+  color: $color-txt;
+  font-family: $main-font;
+  font-size: calc( 18px + ((24 - 18) * ((100vw - 400px) / (1920 - 320))) );
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $main-font;
+  font-weight: 100;
+  margin-bottom: 0.75em;
+  margin-top: 0.75em;
+  text-align: center;
+}
+
+h1 {
+  font-size: $ms1333-h1;
+}
+h2 {
+  font-size: $ms1333-h2;
+}
+h3 {
+  font-size: $ms1333-h3;
+}
+h4 {
+  font-size: $ms1333-h4;
+}
+h5 {
+  font-size: $ms1333-h5;
+}
+h6 {
+  font-size: $ms1333-h6;
+}
+
+@media screen and (min-width: 20rem) {
+  h1 {
+    font-size: $ms1100-h1;
+    font-weight: 300;
+  }
+  h2 {
+    font-size: $ms1100-h2;
+    font-weight: 300;
+  }
+  h3 {
+    font-size: $ms1100-h3;
+    font-weight: 300;
+  }
+  h4 {
+    font-size: $ms1100-h4;
+    font-weight: 300;
+  }
+  h5 {
+    font-size: $ms1100-h5;
+    font-weight: 300;
+  }
+  h6 {
+    font-size: $ms1100-h6;
+    font-weight: 300;
+  }
+}
+

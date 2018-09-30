@@ -1,0 +1,95 @@
+/*
+
+    neo = "Napasha Essential Oils"
+
+    _variables.css
+
+
+    v3.5
+*/
+
+/************* Global Variables*************/
+
+/*
+font-family: 'Paprika', cursive;              Banner text
+font-family: 'Roboto', sans-serif;            Plain text
+font-family: 'Roboto Slab', serif;            Heading text
+font-family: 'Titillium Web', sans-serif;     Menu text
+font-family: 'Bad Script';                    Highlight panel text
+font-family: 'Arima Madurai', cursive;
+*/
+
+$logo-font:     'Arima Madurai', cursive;
+$main-font:     'Roboto', sans-serif;
+$heading-font:  'Roboto', sans-serif;
+$nav-font:      'Titillium Web', sans-serif;
+
+$banner-font-size: calc( 12px + ((26 - 8) * ((100vw - 100px) / (1280 - 320))) );
+$menu-font-size:   calc( 12px + ((12 - 8) * ((100vw - 569px) / (1280 - 569))) );
+$menu-pad-width:   calc( 10px + ((22 - 10) * ((100vw - 569px) / (1280 - 569))) );
+$menu-width:       calc( 512px + ((896 - 512) * ((100vw - 569px) / (1280 - 569))) );
+
+$font:                normal normal 300 1.1rem/1.8rem $main-font;
+$font-bold:           normal normal 500 1.1rem/1.8rem $main-font;
+$font-italic:         italic normal 300 1.1rem/1.8rem $main-font;
+
+$font-small:          normal normal 300 0.8rem/1.5rem $main-font;
+$font-bold-small:     normal normal 400 0.8rem/1.5rem $main-font;
+$font-italic-small:   italic normal 300 0.8rem/1.5rem $main-font;
+
+$font-med:            normal normal 300 1.25rem/1.75rem $main-font;
+$font-bold-med:       normal normal 500 1.25rem/1.75rem $main-font;
+$font-italic-med:     italic normal 300 1.25rem/1.75rem $main-font;
+
+$font-cmenu:          normal normal 300 1rem/.75rem $main-font;
+$font-cmenu-italic:   italic normal 300 1rem/.75rem $main-font;
+
+$font-h1:             normal normal 400 2.00rem/3.00rem $heading-font;
+$font-h2:             normal normal 400 1.75rem/2.50rem $heading-font;
+$font-h3:             normal normal 400 1.50rem/2.25rem $heading-font;
+$font-h4:             normal normal 400 1.25rem/2.00rem $heading-font;
+
+/***    End site fonts   ***/
+
+
+
+/***    Site colors    ***/
+
+$color-article-bg:        #fff;
+$color-banner-bg:         #fff;
+$color-callout-bg:        #fff;
+
+$color-context-menu-bg:   #06342e;
+$color-context-menu-bg:   rgb(36, 104, 128);
+$color-context-menu-bg:   rgb(59, 118, 97);
+
+$color-footer-bg:         rgb(59, 118, 97);
+$color-footer-bg:         #265B90;
+
+$color-nav-bg:            rgb(36, 104, 128);
+$color-nav-bg:            #3981BD;
+$color-nav-bg-hover:      rgb(56, 124, 148);
+$color-nav-bg-hover:      #4DAEFF;
+
+$color-primary-bg:        rgb(111, 171, 208);
+$color-primary-bg:        #0e8072;
+$color-primary-bg:        rgb(92, 190, 218);
+$color-primary-bg:        #3783d0;
+
+$color-callout-border:    #4b6e14;
+
+$color-txt:               #111;
+$color-txt-fade:          #888;
+$color-header-txt:        #646464;
+
+$color-link:              #646464;
+$color-link-hover:        #cee6f6;
+$color-link-visited-txt:  #4b4b4b;
+
+$color-blue:              #3783d0;
+$color-dark-blue:         #1E097F;
+$color-green:             #4b6d13;
+$color-dark-green:        #427530;
+$color-dark-orange:       #b45a02;
+
+/***    End site colors   ***/

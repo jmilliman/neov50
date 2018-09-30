@@ -1,0 +1,126 @@
+/*
+
+    neo = "Napasha Essential Oils"
+
+    main.css
+
+*/
+/**************** Media Queries ***************/
+/*
+
+    neo = "Napasha Essential Oils"
+
+    _variables.css
+
+*/
+/************* Global Variables*************/
+/*
+font-family: 'Paprika', cursive;              Banner text
+font-family: 'Roboto', sans-serif;            Plain text
+font-family: 'Roboto Slab', serif;            Heading text
+font-family: 'Titillium Web', sans-serif;     Menu text
+font-family: 'Bad Script';                    Highlight panel text
+font-family: 'Arima Madurai', cursive;
+*/
+/***    End site fonts   ***/
+/***    Site colors    ***/
+/***    End site colors   ***/
+/* Medium Plus devices (768px to 950px) */
+@media (min-width: 768px) and (max-width: 950px) {
+  .body-blue {
+    min-width: 768px; }
+  h1 {
+    font-size: 1.75em; }
+  h2 {
+    font-size: 1.5em; }
+  h3 {
+    font-size: 1.25em; }
+  .blog-notify__wrapper {
+    width: 90%;
+    font-size: .9em; }
+  .search-container {
+    padding-right: 5px; }
+  .search-module {
+    width: 500px; }
+  .search-module input[type="text"] {
+    width: 250px;
+    margin: 0; }
+  .home-panel-6 {
+    height: 400px; }
+  .home-panel--large-text {
+    font-size: 1.75em;
+    line-height: 2em; }
+  .home-panel--std-text {
+    font-size: 1.25em; }
+  .home-panel--small-text {
+    font-size: 1.25em;
+    line-height: 1em; }
+  .home-panel-0--overtext {
+    width: 30%;
+    position: absolute;
+    top: 12%;
+    left: 10%; }
+  .home-panel-1--overtext {
+    top: 20%; }
+  .home-panel-2 {
+    background-size: 9%; }
+  .home-panel-7 {
+    height: 500px; }
+  .page-wrap {
+    margin-left: 22%;
+    width: 65%; }
+  .store-subnav-offset {
+    padding-top: 150px; }
+  .cart-wrap {
+    padding-bottom: 15px; }
+  .cart-label-left {
+    margin: 0 0 15px 2%; }
+  .form-addtocart {
+    font-weight: normal;
+    font-size: 1em;
+    float: none; }
+  .form-qtyspin {
+    margin: 0 15px 5px 5px; }
+  .context-menu {
+    width: 125px;
+    top: 150px;
+    margin-left: 2%; }
+  .context-menu--wSearch {
+    width: 125px;
+    top: 210px;
+    margin-left: 2%; }
+  .img-native-size {
+    height: 180px; }
+  .badscript {
+    font-size: 1.1em; }
+  .badscript-large {
+    font-size: 2.25em;
+    line-height: 1em; }
+  .ptext-large {
+    font-size: 1.2em; }
+  .ptext-small {
+    font-size: .8em; }
+  .ptext-small-no-just {
+    line-height: 1.25rem;
+    text-align: left; }
+  .ptext-page-title {
+    font-size: 2em;
+    margin: 35px auto;
+    padding-left: 10%; }
+  .ptext-cmenu,
+  .ptext-cmenu-italic {
+    font-size: .8em;
+    line-height: .7em; }
+  .ptext-product-name {
+    font-size: 1.2em;
+    float: none;
+    margin: 10px 0 0 2%; }
+  .footer-full {
+    padding: 35px 0; }
+  .footer-full__mid-left,
+  .footer-full__mid-right {
+    padding-top: 0; }
+  .footer-social-icon-inner {
+    margin-left: 90%; } }
+
+/*  end min-width: 768px  */

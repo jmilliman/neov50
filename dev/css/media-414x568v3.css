@@ -1,0 +1,159 @@
+/* ---------------------------------------------
+
+    project name: kneading-a-massage
+
+    file: 480x567.scss
+
+------------------------------------------------ */
+/************** small (480px x 567px) ****************/
+@media (min-width: 480px) and (max-width: 567px) {
+  .h1--large {
+    font-size: 1.75rem;
+    margin: 35px 0; }
+  .h1--large-border {
+    font-size: 1.75rem;
+    margin: 50px auto;
+    padding-top: 50px; }
+  .h2--large {
+    font-size: 1.35rem;
+    margin: 25px 0; }
+  .f-footer-title {
+    font-size: 1rem; }
+  .f-masthead {
+    font-size: 2.75rem; }
+  .f-medium {
+    font-size: 1.25rem;
+    line-height: 2rem; }
+  .f-quote {
+    font-size: 1.5rem;
+    line-height: 1.75rem; }
+  .f-small {
+    font-size: 1.15rem; }
+  .footer-full {
+    margin-top: 50px; }
+  .footer-left {
+    margin: 35px 0 0 2.5%;
+    width: 35%; }
+  .footer-mid-left {
+    display: none; }
+  .footer-center {
+    margin: 50px 0 0 12%;
+    vertical-align: top;
+    width: 10%; }
+  .footer-right {
+    margin: 35px 5% 0 0;
+    width: 20%; }
+  .footer-mid-right {
+    display: none; }
+  .img-75 {
+    width: 100%; }
+  .masthead {
+    font-size: 1.85rem;
+    height: 96px;
+    padding-top: 25px; }
+  .panel {
+    margin: 35px auto; }
+  .panel-benefits {
+    padding: 1em 1em;
+    width: 100%; }
+  .panel-benefits--left {
+    display: block;
+    margin: 1em 0;
+    width: 100%; }
+  .panel-button {
+    padding: 25px 0;
+    margin-top: 2.25em;
+    width: 38%; }
+  .panel-button--left {
+    margin-left: 7.5%; }
+  .panel-button--right {
+    margin-right: 7.5%; }
+  .panel-contact-email {
+    width: 90%; }
+  .panel-contact--left {
+    margin: 0 0 25px 5%;
+    width: 40%; }
+  .panel-contact--right {
+    margin: 0 5% 25px 0;
+    width: 40%; }
+  .panel__med--right {
+    display: block;
+    margin: 0 auto;
+    width: 90%; }
+  .panel__med-wide {
+    float: none;
+    margin: 0 auto;
+    padding: 0 1em;
+    width: 30rem; }
+  .panel-page-head {
+    margin: 0 auto; }
+  .panel-profile {
+    padding-top: 50px;
+    width: 85%; }
+  .panel-profile--left {
+    float: left;
+    padding-right: 25px;
+    width: 45%; }
+  .panel-profile--right {
+    width: 100%; }
+  .panel-slider {
+    margin-bottom: 25px;
+    width: 100%; }
+  .panel-small {
+    margin: 2.25em auto 0 auto;
+    width: 75%; }
+  .panel__small--left {
+    display: block;
+    float: left;
+    margin: 0 15px 0 5%;
+    vertical-align: none;
+    width: 25%; }
+  .panel__wing {
+    display: none; }
+  .sched-hours {
+    float: none;
+    margin: 5px auto;
+    width: 85%; }
+  .sched-packages {
+    margin: 5px auto;
+    width: 85%; }
+  .sched-rates {
+    float: none;
+    margin: 5px auto;
+    width: 85%; }
+  /**************   nav Styles   *************/
+  .primary-nav--desktop {
+    display: none; }
+  .primary-nav-bar {
+    height: 48px; }
+  .primary-nav--mobile {
+    display: block;
+    font-size: 1.35rem;
+    height: 48px; }
+  .primary-nav-bar__link {
+    margin: 12px 0 0 20px;
+    width: 36px; }
+  .primary-nav-bar__title {
+    margin: 12px 0 0 18%;
+    vertical-align: top; }
+  .primary-nav__logo {
+    width: 20%; }
+  .primary-nav__ul > li {
+    float: none;
+    position: static; }
+  #js-primary-nav-icon {
+    width: 36px;
+    height: 36px; }
+  #js-primary-nav-icon span {
+    height: 3px; }
+  #js-primary-nav-icon span:nth-child(2),
+  #js-primary-nav-icon span:nth-child(3) {
+    top: 10px; }
+  #js-primary-nav-icon span:nth-child(4) {
+    top: 20px; }
+  #js-primary-nav-icon.open span:nth-child(1) {
+    top: 10px; }
+  #js-primary-nav-icon.open span:nth-child(4) {
+    top: 10px; } }
+
+/************  end small (480px x 567)  **************/

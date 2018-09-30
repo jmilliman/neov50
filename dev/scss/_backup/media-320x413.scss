@@ -1,0 +1,503 @@
+/*
+
+    neo = "Napasha Essential Oils"
+
+    main.css
+
+*/
+
+
+
+/**************** Media Queries ***************/
+
+
+@import 'variables';
+
+
+/* Extra small (320px to 413px) */
+
+@media (min-width: 120px) and (max-width: 413px) {
+
+  .body-blue {
+    background-image: none;
+    box-shadow: inset 8px 0 8px 2px #3783d0;
+    min-width: 320px;
+  }
+  h1 {
+    font-size: 1.25em;
+  }
+  h2 {
+    font-size: 1.15em;
+  }
+  h3 {
+    font-size: 1.05em;
+  }
+  .active {
+    display: block;
+  }
+  .article--vertical-offset {
+    padding-top: 80px;
+  }
+  .article--90 {
+    border-radius: 0;
+    box-shadow: 0 0 0 #fff;
+    width: 100%;
+  }
+  .banner__logo--left {
+    width: 45%;
+  }
+  .banner__logo--center {
+    margin-top: 2px;
+    width: 8%;
+  }
+  .banner__logo--right {
+    width: 45%;
+  }
+  .blog-notify__wrapper {
+    width: 100%;
+    padding: 10px;
+    font-size: .8em;
+  }
+  .img-blog {
+    display: none;
+  }
+
+  .callout-small--left {
+    width: 100%;
+    padding: 15px;
+    margin: 10px auto;
+    box-shadow: inset 0 0 5px 2px $color-callout-border;
+  }
+  .callout-small--right {
+    width: 100%;
+    padding: 15px;
+    margin: 10px auto;
+    box-shadow: inset 0 0 5px 2px $color-callout-border;
+  }
+  .callout-medium--center,
+  .callout-large--center {
+    width: 100%;
+    padding: 15px;
+    margin: 35px auto;
+    box-shadow: inset 0 0 5px 2px $color-callout-border;
+  }
+
+  .contact-us--left {
+    padding: 0;
+    margin: 0;
+    float: none;
+  }
+  .contact-us--right {
+    width: 50%;
+    float: none;
+    padding-top: 25px;
+    margin: 0 auto;
+  }
+
+  .container-img-product {
+    float: none;
+    margin: 0 auto 15px auto;
+    width: 15%;
+  }
+  .container-img-round {
+    float: none;
+    margin: 5px auto 15px auto;
+    width: 50%;
+  }
+  .container-img-herb {
+    float: none;
+    margin: 5px auto 25px auto;
+    width: 50%;
+  }
+  .container-img-large {
+    float: none;
+    margin: 5px auto 15px auto;
+    width: 15%;
+  }
+  .container-product {
+    margin: 25px auto 35px auto;
+    padding: 15px;
+    width: 100%;
+  }
+  .container-recipe {
+    width: 100%;
+    padding: 25px 25px;
+    margin: 25px auto;
+  }
+
+  .home-panel--large-text {
+    font-size: 1.25em;
+    line-height: 1.25em;
+  }
+  .home-panel--std-text {
+    font-size: 1em;
+    line-height: 1em;
+  }
+  .home-panel--small-text {
+    font-size: 1em;
+    line-height: 1em;
+  }
+  .img-home-panel-0 {
+    display: none;
+  }
+  .header--vertical-margin {
+    margin: 15px 0;
+  }
+  .home-panel-0--overtext {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px;
+  }
+  .home-panel-1--overtext {
+    top: 5%;
+  }
+  .home-panel-2 {
+    background-image: none;
+  }
+  .home-panel-2--right {
+    float: none;
+    padding: 50px;
+    width: 100%;
+  }
+  .home-panel-3--overtext {
+    width: 80%;
+    top: 1%;
+    left: 1%;
+    padding: 2px;
+  }
+  .home-panel-6 {
+    height: 250px;
+  }
+  .home-panel-6--overtext {
+    top: 85px;
+  }
+  .home-panel-7 {
+    height: 250px;
+  }
+  .home-panel-7--overtext {
+    top: 70px;
+  }
+  .home-panel-spacer {
+    height: 10px;
+  }
+  .page-wrap {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .page-wrap-large {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .page-cMenu-wrap__page-title {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .recipe-ingredients {
+    width: 100%;
+    float: none;
+  }
+  .recipe-image {
+    display: none;
+  }
+  .recipe-page-wrap {
+    width: 100%;
+  }
+
+  .ul-disc li {
+    padding: 0;
+    text-align: left;
+  }
+
+  /***  ecomm styles  -  320 x 413  ***/
+
+  .cart-label-left {
+    margin: 0 0 15px 2%;
+  }
+  .form-cartbutton {
+    border: none;
+    padding: 3px;
+    margin: 0 0 15px 0;
+  }
+  .form-addtocart {
+    font-weight: normal;
+    font-size: 1em;
+    float: none;
+  }
+  .form-qtyspin {
+    margin: 0 15px 5px 5px;
+  }
+
+  /***  search styles  -  320 x 413  ***/
+
+  .search-container {
+    height: 35px;
+    padding: 0 0 0 0;
+    border-bottom: none;
+  }
+  .search-module {
+    width: 310px;
+    height: 32px;
+    margin: 0 5px 0 5px;
+  }
+  .search-module input {
+    font-size: .8em;
+    line-height: 1.5em;
+  }
+  .search-module input[type="text"] {
+    height: 15px;
+    margin-right: 5px;
+  }
+  .search-form {
+    height: 20px;
+    padding: 3px 0 0 2px;
+  }
+  .search-button {
+    width: 5em;
+    height: 22px;
+    margin-left: 2px;
+  }
+  .search-button.button {
+    font-size: 1em;
+  }
+  .search-icon {
+    display: none;
+  }
+  form.search-form input.ptext-italic {
+    width: 190px;
+  }
+
+  /*** image styles  -  320 x 413  ***/
+
+  .img-breath {
+    width: 50%;
+    margin: 0 0 15px 25px;
+  }
+  .img-center {
+    width: 65%;
+  }
+  .img-ml5 {
+  }
+  .img-herb,
+  .img-product-round,
+  .img-product-large {
+    border-radius: 3px;
+  }
+
+  .img-social-fb {
+    height: 24px;
+  }
+  .img-ccards {
+    height: 24px;
+  }
+  .img-cart-footer {
+    height: 24px;
+    margin-left: 25px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin: 0 10px 0 20px;
+  }
+
+  /***  neo nav styles  -   320 x 413 ***/
+
+  .context-menu {
+    display: none;
+  }
+  .context-menu--wSearch {
+    display: none;
+  }
+  .horizontal-menu-outer {
+    display: block;
+  }
+  .horizontal-menu-inner {
+    width: 275px;
+  }
+  .nav-wrap-wsearch {
+    height: 94px;
+  }
+  .nav-policy-pages {
+    display: block;
+  }
+  .neo-menu {
+    white-space: nowrap;
+    overflow: hidden;
+    padding-top: 0;
+  }
+  .neo-menu__ul {
+    width: 100%;
+    background-color: #3783d0;
+    margin: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .neo-menu__ul ul {
+    width: 100%;
+  }
+  .neo-menu__ul > li {
+    float: none;
+  }
+  .neo-menu__ul > li.hover > ul,
+  .neo-menu__ul li li.hover ul {
+    position: static;
+  }
+  .neo-menu__ul a {
+    background-color: #f5f5f5;
+    color: #3783d0;
+    border-top: 1px solid rgb(200, 200, 200);
+  }
+  .neo-menu__ul li:hover a,
+  .neo-menu__ul li ul li:hover a,
+  .neo-menu__ul li.hover li.hover li a,
+  .neo-menu__ul li:hover li:hover li:hover a {
+    background-color: #f5f5f5;
+    color: #3783d0;
+  }
+  .neo-menu__ul li .parent {
+    background-image: url("_images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+  }
+  .neo-menu__ul li.hover > a {
+    background-image: url("_images/upArrow.png");
+    background-color: #f5f5f5;
+    color: #3783d0;
+  }
+  .neo-menu__ul li ul li a {
+    padding-left: 2.75em;
+  }
+  .neo-menu__ul li ul li.hover li > a {
+    padding-left: 4.25em;
+  }
+  .neo-menu__cart-icon {
+    height: 20px;
+    top: 2px;
+  }
+
+  .oil-family-links {
+    display: block;
+  }
+  .store-subnav-offset {
+    padding-top: 140px;
+  }
+  .toggleMenu {
+    font-size: 1em;
+    line-height: 1em;
+    margin: 3px 0 3px 10px;
+  }
+
+  /***  font styles  -  320 x 413  ***/
+
+  .badscript {
+    font-size: 1.1em;
+  }
+  .badscript-medium {
+    font-size: 1.25em;
+  }
+  .badscript-medium-plus {
+    font-size: 1.5em;
+    line-height: 2.25em;
+  }
+  .badscript-large {
+    font-size: 2em;
+    line-height: .5em;
+  }
+  .ptext-large {
+    font-size: 1.1em;
+  }
+  .logo--left {
+    line-height: 1em;
+  }
+  .logo--right {
+    line-height: 1em;
+  }
+  .ptext,
+  .ptext-no-just {
+    font-size: 1em;
+    line-height: 1.5em;
+    text-align: left;
+  }
+  .ptext-center {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  .ptext-med {
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+  .ptext-page-title {
+    font-size: 1.25em;
+    margin: 35px 0 0 0;
+  }
+  .ptext-product-name {
+    font-size: 1em;
+    float: none;
+    margin: 10px 0 0 2%;
+  }
+  .ptext-bold,
+  .ptext-italic {
+    font-size: 1em;
+  }
+  .ptext-small {
+    text-align: left;
+  }
+  .ptext-small-no-just {
+    line-height: 1.1rem;
+    text-align: left;
+  }
+  .ptext-hmenu {
+    display: inline;
+    font-size: .7em;
+    padding-left: 15px;
+  }
+  .ptext-hmenu:first-child {
+    padding-left: 0;
+  }
+  /***  footer styles  -  320 x 413  ***/
+
+  .footer-full {
+    min-width: 320px;
+    padding: 25px 0 25px 0;
+  }
+  .footer-full__left {
+    display: none;
+  }
+  .footer-full__mid-left {
+    width: 35%;
+    padding: 0;
+    margin: 0 0 0 5%;
+  }
+  .footer-full__mid-logo {
+    width: 20%;
+    margin-top: 25px;
+  }
+  .footer-full__logo-img {
+    width: 50px;
+  }
+  .footer-full__mid-right {
+    width: 30%;
+    float: right;
+    text-align: right;
+    padding: 0;
+    margin-right: 2%;
+  }
+  .footer-full__right {
+    display: none;
+  }
+  .footer-full__bottom-left {
+    float: none;
+    margin: 0 0 15px 5px;
+  }
+  .footer-full__bottom-right {
+    float: none;
+    margin: 10px 0 0 5px;
+  }
+  .footer-social-icon-inner {
+    width: 275px;
+  }
+}
+
+
+/*  end 320px x 413px;  */

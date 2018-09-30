@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /htpasswds/
+Disallow: /cgi-bin/
+Sitemap: http://www.napashaway.com/sitemap.xml

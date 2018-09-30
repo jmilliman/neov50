@@ -1,0 +1,135 @@
+	<!DOCTYPE html>
+
+	<html lang="en">
+
+		<head>
+			<!-- <meta charset="UTF-8" /> -->
+
+			<meta http-equiv=“Content-Type” content=“text/html; charset=utf-8”/>	
+
+			<!--[if lt IE 9 ]>
+			    <script type="text/javascript">
+			        var IEElms = ['article', 'aside', 'header', 'main', 'nav', 'section'];
+			        for (var i = 0; i < IEElms.length; i++) {
+			            document.createElement(IEElms[i]);
+			        };
+			    </script>
+			    <script src="//{{ config.store_domain }}/static/scripts/respond/respond.1.4.2.js" charset="utf-8"></script>
+			<![endif]-->
+
+			<link href="{{ config.css_file }}" rel="stylesheet" media="all">
+
+			<link href='http://fonts.googleapis.com/css?family=Bad+Script|Paprika|Nunito|Merriweather+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+			<link rel="stylesheet" type="text/css" href="neo.css" />
+
+			<!-- FC script insertion -->{{ fc_header_content|raw }}<!-- /FC script insertion -->
+
+			<title>Napasha Way</title>
+		</head>
+
+		<body class="blubod-fc">
+
+ 		<nav class="bluhome">
+			<div class="splash">
+				<div class="splashlogo">
+					<div class="logoleft">
+						<p class="paprika">
+						Napasha Way
+						</p>
+					</div>
+				
+					<div class="logocenter">
+						<img class="logo" src="_images/NEO_Logo_100.png"/>
+					</div>
+				
+					<div class="logoright">
+						<p class="paprika">
+						Essential Oils
+						</p>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="menubar">
+			<div class="menumodule">
+				<ul class="menu">
+				  <li><a href="index.html">Home</a></li>
+
+					<li><a href="oils.html">Store</a>
+						<ul>
+				 			<li><a href="oils.html">Essential Oil Singles</a></li>
+							<li><a href="oils-blends.html">Essential Oil Blends</a></li>
+							<li><a href="oils-botanical.html">Botanical Oils</a></li>
+							<li><a href="products.html">Other Products</a></li>
+				  	</ul>
+				  </li>
+				  
+				  <li><a href="aboutoils.html">About Oils</a>
+						<ul>
+				  		<li><a href="aboutoils.html#labels">Essential Oil Labeling</a></li>
+				  		<li><a href="aboutoils.html#extraction">Extraction Methods</a></li>
+				  		<li><a href="aboutoils.html#usingoils">How to Use Oils</a></li>
+				  		<li><a href="aboutoils.html#carrieroils">Carrier Oils</a></li>
+				  		<li><a href="aboutoils.html#dilutions">Diluting Oils</a></li>		    	
+							<li><a href="aboutoils.html#storingoils">Storing Essential Oils</a></li>
+							<li><a href="aboutoils.html#miron">Why Miron Bottles?</a></li>
+					  </ul>
+				  </li>
+
+				  <li><a href="herbalref.html">Herbal Ref</a></li>
+
+				  <li><a href="attitude.html">Health</a>
+						<ul>
+			  			<li><a href="dis-ease.html">Dis-ease</a></li>
+							<li><a href="lifestyle.html">Lifestyle</a></li>
+							<li><a href="attitude.html">Thoughts</a></li>
+				  	</ul>
+				  </li>
+
+				  <li><a href="meridians.html">Meridians</a>
+						<ul>
+							<li><a href="meridians.html">Introduction to Meridians</a></li>
+			  			<li><a href="spring.html">Spring<br><i>Liver &amp; Gallbladder</i></a></li>
+							<li><a href="summer.html">Summer<br><i>Heart &amp; Small Intestine</i></a></li>
+							<li><a href="indiansummer.html">Indian Summer<br><i>Stomach &amp; Spleen</i></a></li>
+			  			<li><a href="autumn.html">Autumn<br><i>Lung &amp; Large Intestine</i></a></li>
+							<li><a href="winter.html">Winter<br><i>Kidney &amp; Bladder</i></a></li>
+				  	</ul>
+				  </li>
+
+					<li><a href="massage.html">Massage</a></li>
+
+				  <li><a href="aboutus.html">About Us</a>
+			  		<ul>
+							<li><a href="aboutus.html#bio">Bio</a></li>
+							<li><a href="aboutus.html#mission">Our Mission</a></li>
+							<li><a href="aboutus.html#napasha">What Is Napasha?</a></li>
+							<li><a href="aboutus.html#contactus">Contact Us</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+			
+<!--		<div id="fc" class="fc-contentContainer"> -->
+
+			<div id="fc" class="fc-contentContainer">
+				{% include 'svg.inc.twig' %}
+ 
+ 				{% import "utils.inc.twig" as utils %}
+ 				{% embed 'checkout.inc.twig' %}
+ 				{% endembed %}
+			</div>
+
+<!--		</div> -->
+			
+
+		<script src="_scripts/jquery.waypoints.min.js"></script>
+		<script src="_scripts/neo.js"></script>x
+
+		<!-- FC footer script insertion -->{% include template_from_string(fc_footer_content) %}<!-- /FC footer scripts -->
+
+		</body>
+	</html>

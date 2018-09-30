@@ -1,0 +1,77 @@
+/* ---------------------------------------------
+
+    project name: kneading-a-massage
+
+    _typography.scss
+
+------------------------------------------------ */
+
+
+
+body {
+  color: $color-pri-txt;
+  font-family: $font-main;
+  font-size: calc( 18px + ((24 - 18) * ((100vw - 400px) / (1920 - 320))) );
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-main;
+  font-weight: 100;
+  margin-bottom: 0.75em;
+  margin-top: 0.75em;
+  text-align: center;
+}
+
+h1 {
+  font-size: $ms1333-h1;
+}
+h2 {
+  font-size: $ms1333-h2;
+}
+h3 {
+  font-size: $ms1333-h3;
+}
+h4 {
+  font-size: $ms1333-h4;
+}
+h5 {
+  font-size: $ms1333-h5;
+}
+h6 {
+  font-size: $ms1333-h6;
+}
+
+@media screen and (min-width: 20rem) {
+  h1 {
+    font-size: $ms1100-h1;
+    font-weight: 300;
+  }
+  h2 {
+    font-size: $ms1100-h2;
+    font-weight: 300;
+  }
+  h3 {
+    font-size: $ms1100-h3;
+    font-weight: 300;
+  }
+  h4 {
+    font-size: $ms1100-h4;
+    font-weight: 300;
+  }
+  h5 {
+    font-size: $ms1100-h5;
+    font-weight: 300;
+  }
+  h6 {
+    font-size: $ms1100-h6;
+    font-weight: 300;
+  }
+}
+

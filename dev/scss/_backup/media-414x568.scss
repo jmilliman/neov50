@@ -1,0 +1,494 @@
+/*
+
+    neo = "Napasha Essential Oils"
+
+    main.css
+
+*/
+
+
+
+/**************** Media Queries ***************/
+
+
+@import 'variables';
+
+
+/* Small devices (414px to 568px) */
+
+@media (min-width: 414px) and (max-width: 568px) {
+
+  .body-blue {
+    background-image: none;
+    box-shadow: inset 10px 0 10px 3px #3783d0;
+    min-width: 414px;
+  }
+  h1 {
+    font-size: 1.35em;
+  }
+  h2 {
+    font-size: 1.25em;
+  }
+  h3 {
+    font-size: 1.1em;
+  }
+  .active {
+    display: block;
+  }
+  .article--90 {
+    border-radius: 0;
+    box-shadow: 0 0 0 #fff;
+    width: 100%;
+  }
+  .article--vertical-offset {
+    padding-top: 125px;
+  }
+  .banner__logo--left {
+    width: 45%;
+  }
+  .banner__logo--center {
+    width: 8%;
+  }
+  .banner__logo--right {
+    width: 45%;
+  }
+  .blog-notify__wrapper {
+    width: 100%;
+    padding: 10px;
+    font-size: .9em;
+  }
+  .img-blog {
+    display: none;
+  }
+
+  .callout-small--left {
+    width: 100%;
+    padding: 15px;
+    margin: 10px auto;
+    box-shadow: inset 0 0 5px 2px $color-callout-border;
+  }
+  .callout-small--right {
+    width: 100%;
+    padding: 15px;
+    margin: 10px auto;
+    box-shadow: inset 0 0 5px 2px $color-callout-border;
+  }
+  .callout-medium--center,
+  .callout-large--center {
+    width: 100%;
+    padding: 15px;
+    margin: 35px auto;
+    box-shadow: inset 0 0 5px 2px $color-callout-border;
+  }
+
+  .container-img-product {
+    float: none;
+    margin: 0 auto 25px auto;
+    width: 15%;
+  }
+  .container-img-round {
+    float: none;
+    margin: 5px auto 15px auto;
+    width: 50%;
+  }
+  .container-img-herb {
+    float: none;
+    margin: 5px auto 25px auto;
+    width: 50%;
+  }
+  .container-img-large {
+    float: none;
+    margin: 5px auto 15px auto;
+    width: 15%;
+  }
+
+  .container-product {
+    margin: 25px auto 35px auto;
+    padding: 15px;
+    width: 100%;
+  }
+  .container-recipe {
+    margin: 25px auto;
+    width: 100%;
+  }
+
+  .contact-us--left {
+    padding: 0;
+    margin: 0;
+  }
+  .contact-us--right {
+    padding: 0;
+    margin: 0;
+    width: 30%;
+  }
+
+  .home-panel--large-text {
+    font-size: 1.25em;
+    line-height: 1.25em;
+  }
+  .home-panel--std-text {
+    font-size: 1.25em;
+    line-height: 1em;
+  }
+  .home-panel--small-text {
+    font-size: 1em;
+    line-height: 1em;
+  }
+
+  .img-home-panel-0 {
+    display: none;
+  }
+  .header--vertical-margin {
+    margin: 15px 0;
+  }
+  .home-panel-0--overtext {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 25px;
+  }
+  .home-panel-1--overtext {
+    top: 5%;
+  }
+  .home-panel-2 {
+    background-image: none;
+  }
+  .home-panel-2--right {
+    float: none;
+    padding: 50px;
+    width: 100%;
+  }
+  .home-panel-3--overtext {
+    width: 80%;
+    top: 5%;
+    left: 2%;
+    padding: 2px;
+  }
+  .home-panel-6 {
+    height: 250px;
+  }
+  .home-panel-6--overtext {
+    top: 85px;
+  }
+  .home-panel-7 {
+    height: 300px;
+  }
+  .home-panel-7--overtext {
+    top: 100px;
+  }
+  .home-panel-spacer {
+    height: 10px;
+  }
+
+  .home-panel--large-text {
+    font-size: 1.25em;
+    line-height: 1.25em;
+  }
+  .home-panel--std-text {
+    font-size: 1em;
+    line-height: 1.25em;
+  }
+
+  .page-wrap {
+    margin: 0 auto;
+    width: 85%;
+  }
+  .page-wrap-large {
+    margin: 0 auto;
+    width: 85%;
+  }
+  .page-wrap__page-title {
+    padding: 25px 0 5px 0;
+  }
+  .page-cMenu-wrap__page-title {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .recipe-ingredients {
+    width: 100%;
+    float: none;
+  }
+  .recipe-image {
+    display: none;
+  }
+
+  /***  ecomm styles  -  414 x 568  ***/
+
+  .cart-wrap {
+    padding-bottom: 15px;
+  }
+  .cart-label-left {
+    margin: 0 0 15px 2%;
+  }
+  .form-cartbutton {
+    font-size: .9em;
+    border: none;
+    padding: 3px;
+    margin: 0 0 15px 0;
+  }
+  .form-addtocart {
+    font-weight: normal;
+    font-size: .9em;
+    float: none;
+  }
+  .form-qtyspin {
+    margin: 0 25px 5px 5px;
+  }
+
+  /***  search styles  -  414 x 568  ***/
+
+  .search-container {
+    height: 35px;
+    padding: 2px 0 0 0;
+    border-bottom: none;
+  }
+  .search-module {
+    width: 405px;
+    height: 32px;
+    margin: 0 5px;
+  }
+  .search-module input {
+    font-size: 1em;
+    margin-right: 0;
+  }
+  .search-module input[type="text"] {
+    height: 16px;
+    margin-right: 5px;
+    padding: 2px 0;
+  }
+  .search-form {
+    height: 20px;
+    padding: 1px 0 0 5px;
+  }
+  .search-button {
+    width: 4.5em;
+    height: 20px;
+    margin-left: 2px;
+  }
+  .search-button.button {
+    font-size: 1em;
+  }
+  .search-icon {
+    display: none;
+  }
+
+  /*** image styles  -  414 x 568  ***/
+
+  .img-breath {
+    width: 50%;
+    margin: 0 0 15px 25px;
+  }
+  .img-center {
+    width: 50%;
+  }
+  .img-ml5 {
+  }
+
+  .img-herb,
+  .img-product-round,
+  .img-product-large {
+    border-radius: 3px;
+  }
+
+  .img-social-fb {
+    height: 32px;
+  }
+  .img-ccards {
+    height: 32px;
+  }
+
+  /***  neo nav styles  -  414 x 568  ***/
+
+  .context-menu,
+  .context-menu--wSearch {
+    display: none;
+  }
+  .horizontal-menu-outer {
+    display: block;
+  }
+  .horizontal-menu-inner {
+    width: 360px;
+  }
+  .nav-wrap-wsearch {
+    height: 94px;
+  }
+  .nav-policy-pages {
+    display: block;
+  }
+  .neo-menu {
+    white-space: nowrap;
+    overflow: hidden;
+    padding-top: 0;
+  }
+  .neo-menu__ul {
+    width: 100%;
+    background-color: #3783d0;
+    margin: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+  .neo-menu__ul ul {
+    width: 100%;
+  }
+  .neo-menu__ul > li {
+    float: none;
+  }
+  .neo-menu__ul > li.hover > ul,
+  .neo-menu__ul li li.hover ul {
+    position: static;
+  }
+  .neo-menu__ul a {
+    background-color: #f5f5f5;
+    color: #3783d0;
+    border-top: 1px solid rgb(200, 200, 200);
+  }
+  .neo-menu__ul li:hover a,
+  .neo-menu__ul li ul li:hover a,
+  .neo-menu__ul li.hover li.hover li a,
+  .neo-menu__ul li:hover li:hover li:hover a {
+    background-color: #f5f5f5;
+    color: #3783d0;
+  }
+  .neo-menu__ul li .parent {
+    background-image: url("_images/downArrow.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+  }
+  .neo-menu__ul li.hover > a {
+    background-image: url("_images/upArrow.png");
+    background-color: #f5f5f5;
+    color: #3783d0;
+  }
+  .neo-menu__ul li ul li a {
+    padding-left: 3em;
+  }
+  .neo-menu__ul li ul li.hover li > a {
+    padding-left: 4.5em;
+  }
+  .neo-menu__cart-icon {
+    height: 20px;
+    top: 2px;
+  }
+
+  .oil-family-links {
+    display: block;
+  }
+  .store-subnav-offset {
+    padding-top: 150px;
+  }
+  .toggleMenu {
+    font-size: 1em;
+    line-height: 1em;
+    margin: 3px 0 3px 10px;
+  }
+
+  /***  font styles  -  414 x 568  ***/
+
+  .badscript {
+    font-size: 1.1em;
+  }
+  .badscript-medium {
+    font-size: 1.5em;
+  }
+  .badscript-medium-plus {
+    font-size: 1.75em;
+  }
+  .badscript-large {
+    font-size: 2em;
+    line-height: .5em;
+  }
+  .ptext-large {
+    font-size: 1.2em;
+  }
+  .ptext,
+  .ptext-no-just {
+    font-size: 1em;
+    line-height: 1.65em;
+    text-align: left;
+  }
+  .ptext-center {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+  .ptext-med {
+    font-size: 1.1em;
+    line-height: 1.5em;
+  }
+  .ptext-page-title {
+    font-size: 1.35em;
+    margin: 0;
+    padding-top: 25px;
+  }
+  .ptext-product-name {
+    font-size: 1.2em;
+    float: none;
+    margin: 10px 0 0 2%;
+  }
+  .ptext-bold,
+  .ptext-italic {
+    font-size: 1em;
+  }
+  .ptext-small {
+    text-align: left;
+  }
+  .ptext-small-no-just {
+    line-height: 1.2rem;
+    text-align: left;
+  }
+  .ptext-hmenu {
+    display: inline;
+    font-size: .8em;
+    padding-left: 20px;
+  }
+  .ptext-hmenu:first-child {
+    padding-left: 0;
+  }
+  /***  footer styles  -  414 x 568  ***/
+
+  .footer-full {
+    min-width: 414px;
+    padding: 25px 0 25px 0;
+  }
+  .footer-full__left {
+    display: none;
+  }
+  .footer-full__mid-left {
+    width: 30%;
+    padding: 0;
+    margin: 0 0 0 8%;
+  }
+  .footer-full__mid-logo {
+    width: 24%;
+    margin: 0;
+  }
+  .footer-full__logo-img {
+    width: 100px;
+  }
+  .footer-full__mid-right {
+    width: 30%;
+    float: right;
+    text-align: right;
+    padding: 0;
+    margin: 0 8% 0 0;
+  }
+  .footer-full__right {
+    display: none;
+  }
+  .footer-full__bottom-left {
+    float: none;
+    margin: 0 0 15px 5px;
+  }
+  .footer-full__bottom-right {
+    float: none;
+    margin: 10px 0 0 5px;
+  }
+  .footer-social-icon-inner {
+    width: 340px;
+  }
+}
+
+
+/*  end 414px x 568  */

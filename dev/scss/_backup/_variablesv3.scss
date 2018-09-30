@@ -1,0 +1,80 @@
+/* ---------------------------------------------
+
+    project name: kneading-a-massage
+
+    _variables.scss
+
+------------------------------------------------ */
+
+
+
+/************   colors   ***********/
+
+$color-pri-bg:                #a86ab1;
+$color-footer-bg:             #5e3264;
+
+$color-pri-txt:               #111;
+$color-sec-txt:               #444;
+
+$color-nav-bg:                #a86ab1;
+$color-nav-level1-bg-hover:   #c688cf;
+$color-nav-level2-bg-hover:   #b779c0;
+$color-nav-txt:               #fff;
+$color-nav-level1-txt-hover:  #fff;
+$color-nav-level2-txt-hover:  #fff;
+
+$color-link-txt:              #000;
+$color-link-hover:            #cee6f6;
+$color-link-visited-txt:      #4b4b4b;
+
+
+
+/************   typography   ***********/
+
+$font-banner : 'Nothing You Could Do', cursive;
+$font-main : 'Roboto', sans-serif;
+$font-quote: 'Kalam', cursive;
+
+/*  Modular Scale */
+
+$ms1100-h1: 1.772em;
+$ms1100-h2: 1.611em;
+$ms1100-h3: 1.464em;
+$ms1100-h4: 1.331em;
+$ms1100-h5: 1.210em;
+$ms1100-h6: 1.100em;
+
+$ms1150-h1: 2.313em;
+$ms1150-h2: 2.011em;
+$ms1150-h3: 1.749em;
+$ms1150-h4: 1.528em;
+$ms1150-h5: 1.326em;
+$ms1150-h6: 1.150em;
+
+$ms1200-h1: 2.986em;
+$ms1200-h2: 2.488em;
+$ms1200-h3: 2.074em;
+$ms1200-h4: 1.728em;
+$ms1200-h5: 1.440em;
+$ms1200-h6: 1.200em;
+
+$ms1333-h1: 5.610em;
+$ms1333-h2: 4.209em;
+$ms1333-h3: 3.157em;
+$ms1333-h4: 2.369em;
+$ms1333-h5: 1.777em;
+$ms1333-h6: 1.333em;
+
+$ms1618-h1: 6.854em;
+$ms1618-h2: 4.236em;
+$ms1618-h3: 2.618em;
+$ms1618-h4: 1.618em;
+$ms1618-h5: 1.333em;
+$ms1618-h6: 1.200em;
+
+
+
+
+
+
+/************   End Variables   ***********/

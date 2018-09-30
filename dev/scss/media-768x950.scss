@@ -1,0 +1,230 @@
+/*
+
+    neo = "Napasha Essential Oils"
+
+    main.css
+
+*/
+
+
+
+/**************** Media Queries ***************/
+
+
+@import 'variables';
+
+
+/* Medium Plus devices (768px to 950px) */
+
+@media (min-width: 768px) and (max-width: 950px) {
+
+//  .body-blue {
+//    min-width: 768px;
+//  }
+  h1 {
+    font-size: 1.75em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.25em;
+  }
+
+  .article--90 {
+    width: 75%;
+  }
+
+  .blog-notify__wrapper {
+    width: 90%;
+    font-size: .9em;
+  }
+
+  .callout-meridians {
+      width: 70%;
+      padding: 15px;
+      margin: 35px auto;
+      box-shadow: inset 0 0 5px 5px rgb(57,129,189);
+    }
+  .container-product {
+    width: 85%;
+  }
+
+  .home-panel-6 {
+    height: 400px;
+  }
+
+  .home-panel--large-text {
+    font-size: 1.75em;
+    line-height: 2em;
+  }
+
+  .home-panel--std-text {
+    font-size: 1.25em;
+  }
+
+  .home-panel--small-text {
+    font-size: 1.25em;
+    line-height: 1em;
+  }
+  .home-panel-0--overtext {
+    width: 30%;
+    position: absolute;
+    top: 12%;
+    left: 10%;
+  }
+  .home-panel-1--overtext {
+    top: 20%;
+  }
+  .home-panel-2 {
+  //  background-size: 9%;
+  }
+  .home-panel-7--overtext {
+    height: 150px;
+    left: 10%;
+    width: 80%;
+  }
+  .home-panel-7--text {
+    font-size: 2.25rem;
+    left: 10%;
+    width: 80%;
+  }
+  .horizontal-menu-inner {
+    width: 658px;
+  }
+  .img-center-large {
+    width: 75%;
+  }
+  .page-wrap {
+    width: 75%;
+  }
+  .page-wrap__wcontext {
+  //  margin: 0 0 0 20%;
+  //  width: 75%;
+  }
+
+  .primary-nav-desktop-wrapper {
+    height: 30px;
+  }
+
+  .primary-nav__ul ul {
+    width: 9rem;
+  }
+
+
+  .context-menu {
+    top: 150px;
+    margin-left: 2%;
+  }
+  .context-menu__txt {
+    font-size: .9rem;
+    margin: 10px;
+    width: 90px;
+  }
+
+  .health-sub-menu {
+    width: 302px;
+  }
+  .health-sub-menu__txt {
+    margin: 3px 10px;
+    width: 120px;
+  }
+
+  .meridian-menu {
+    width: 645px;
+  }
+  .meridian-menu__txt {
+    width: 300px;
+  }
+
+  .oil-menu {
+    margin: 20px auto 0 auto;
+    width: 512px;
+  }
+  .oil-menu__txt {
+    margin: 10px 5px;
+    width: 105px;
+  }
+  .oil-menu__txt:first-child {
+    display: none;
+  }
+
+.store-menu {
+  width: 434px;
+}
+.store-menu__txt {
+  margin: 8px;
+  width: 118px;
+}
+
+
+  .cart-wrap {
+    padding-bottom: 15px;
+  }
+  .cart-label-left {
+    margin: 0 0 15px 2%;
+  }
+  .form-addtocart {
+    font-weight: normal;
+    font-size: 1em;
+    float: none;
+  }
+  .form-qtyspin {
+    margin: 0 15px 5px 5px;
+  }
+
+
+  .img-native-size {
+    height: 180px;
+  }
+  .img-center-store {
+    width: 85%;
+    margin: 35px auto;    
+  }
+
+
+  .badscript {
+    font-size: 1.1em;
+  }
+  .badscript-large {
+    font-size: 2.25em;
+    line-height: 1em;
+  }
+  .ptext-large {
+    font-size: 1.2em;
+  }
+  .ptext-page-title {
+    font-size: 1.75em;
+    margin: 35px auto;
+    padding-left: 10%;
+  }
+  .ptext-cmenu,
+  .ptext-cmenu-italic {
+    font-size: .8em;
+    line-height: .7em;
+  }
+  .ptext-hmenu {
+    font-size: .9rem;
+    margin-left: 70px;
+  }
+  .ptext-product-name {
+    font-size: 1.2em;
+    float: none;
+    margin: 10px 0 0 2%;
+  }
+
+
+  .footer-full {
+    padding: 35px 0;
+  }
+  .footer-full__mid-left,
+  .footer-full__mid-right {
+    padding-top: 0;
+  }
+  .footer-social-icon-inner {
+    margin-left: 90%;
+  }
+}
+
+
+/*  end min-width: 768px  */

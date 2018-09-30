@@ -1,0 +1,105 @@
+{% if context == 'cart' or context == 'checkout' %}
+<script type="text/javascript" charset="utf-8">
+(function (FC, $) {
+    FC.customFlatRates = {};
+    FC.customFlatRates.shipping_results = [];
+ 
+    FC.customFlatRates.config = {
+        'autoSelect': false  /* Set to true if you'd like the top shipping option to be automatically selected for the user */
+    };
+ 
+    FC.customFlatRates.logic = function(address) {
+    /* BEGIN CUSTOM SHIPPING LOGIC */
+ 
+
+    var sPri = 0;
+    var mPri = 0;
+    var lPri = 0;
+    var shipCost = 0;
+    
+    for (var x = 0; x < FC.json.items.length; x++) {
+
+        if (FC.json.items[x].category === "5MLB") {
+            sPri += (.1000 * FC.json.items[x].quantity);
+            mPri += (.0143 * FC.json.items[x].quantity);
+            lPri += (.0089 * FC.json.items[x].quantity);
+        }
+
+        if (FC.json.items[x].category === "15MLB") {
+            sPri += (.1250 * FC.json.items[x].quantity);
+            mPri += (.0167 * FC.json.items[x].quantity);
+            lPri += (.0104 * FC.json.items[x].quantity);
+        }
+
+        if (FC.json.items[x].category === "2OZB") {
+            sPri += (.2000 * FC.json.items[x].quantity);
+            mPri += (.0278 * FC.json.items[x].quantity);
+            lPri += (.0204 * FC.json.items[x].quantity);
+        }
+
+        if (FC.json.items[x].category === "4OZB") {
+            sPri += (.3333 * FC.json.items[x].quantity);
+            mPri += (.0500 * FC.json.items[x].quantity);
+            lPri += (.0400 * FC.json.items[x].quantity);
+        }
+
+        if (FC.json.items[x].category === "9OZJ") {
+            sPri += (1.999 * FC.json.items[x].quantity);
+            mPri += (.1667 * FC.json.items[x].quantity);
+            lPri += (.0625 * FC.json.items[x].quantity);
+        }
+
+        if (FC.json.items[x].category === "1OZT") {
+            sPri += (.0625 * FC.json.items[x].quantity);
+            mPri += (.0109 * FC.json.items[x].quantity);
+            lPri += (.0067 * FC.json.items[x].quantity);
+        }
+        
+        if (FC.json.items[x].category === "2OZT") {
+            sPri += (.0833 * FC.json.items[x].quantity);
+            mPri += (.0139 * FC.json.items[x].quantity);
+            lPri += (.0089 * FC.json.items[x].quantity);
+        }
+
+    }
+
+    if (sPri <= 1) {
+        shipCost = 5.25;
+    } else if (mPri <= 1) {
+        shipCost = 11.30;
+    } else {
+        shipCost = 15.80;
+    }
+
+    confirm("Small " + sPri + " Medium " + mPri + " Large " + lPri);
+
+    FC.customFlatRates.add(999, shipCost, ' ', 'Shipping');
+ 
+ /*
+   FC.client.on('render.done', function(params, next) {
+        jQuery(".fc-checkout__section--shipping-results").hide();
+    });
+*/
+
+
+    /* END CUSTOM SHIPPING LOGIC */
+    };
+ 
+    /* Flat Rate Shipping Modification Logic v2.0.6 */
+FC.customFlatRates.add=function(a,b,d,c){FC.customFlatRates.shipping_results.push({method:d,price:b,service_id:a,service_name:c})};FC.customFlatRates.hide=function(a){a=FC.customFlatRates.filterShippingOptions(a);for(var b=0;b<a.length;b++)FC.customFlatRates.shipping_results[a[b]].hide=!0};FC.customFlatRates.show=function(a){a=FC.customFlatRates.filterShippingOptions(a);for(var b=0;b<a.length;b++)FC.customFlatRates.shipping_results[a[b]].hide=!1};
+    FC.customFlatRates.remove=function(a){a=FC.customFlatRates.filterShippingOptions(a);a=a.sort(function(a,b){return b-a});for(var b=a.length-1;0<=b;b--)FC.customFlatRates.shipping_results.splice(a[b],1)};
+    FC.customFlatRates.update=function(a,b,d,c){a=FC.customFlatRates.filterShippingOptions(a);for(var e=0;e<a.length;e++){if("number"===typeof b||"string"===typeof b&&""!==b){var f=FC.customFlatRates.modifyPrice(FC.customFlatRates.shipping_results[a[e]].price,b);FC.customFlatRates.shipping_results[a[e]].price=f}"string"===typeof d&&(FC.customFlatRates.shipping_results[a[e]].method=d);"string"===typeof c&&(FC.customFlatRates.shipping_results[a[e]].service_name=c)}};
+    FC.customFlatRates.reset=function(){FC.customFlatRates.shipping_results=[];FC.customFlatRates.error_message=!1};FC.customFlatRates.error=function(a){FC.customFlatRates.error_message=a};
+    FC.api.getShippingOptions=function(a){var b={address_name:a.address_name,state:a.region,country:a.country,city:a.city,postal_code:a.postal_code};FC.customFlatRates.reset();FC.customFlatRates.logic(b);for(b=FC.customFlatRates.shipping_results.length-1;0<=b;b--)FC.customFlatRates.shipping_results[b].hide&&FC.customFlatRates.shipping_results.splice(b,1);if(FC.customFlatRates.config.autoSelect&&0==a.shipping_service_id||1==FC.customFlatRates.shipping_results.length){if(FC.json.has_multiship)for(b=0;b<
+    FC.json.multiship_data.length;b++)FC.json.multiship_data[b].address_name==a.address_name&&(FC.json.multiship_data[b].shipping_service_id=FC.customFlatRates.shipping_results[0].service_id,FC.json.multiship_data[b].shipping_service_description=FC.customFlatRates.shipping_results[0].method+" "+FC.customFlatRates.shipping_results[0].service_name);else FC.json.shipping_address.shipping_service_id=FC.customFlatRates.shipping_results[0].service_id,FC.json.shipping_address.shipping_service_description=FC.customFlatRates.shipping_results[0].method+
+    " "+FC.customFlatRates.shipping_results[0].service_name;FC.json.show_shipping_tbd=!1}return $.Deferred(function(a){setTimeout(function(){FC.customFlatRates.error_message?a.reject(Error(FC.customFlatRates.error_message)):a.resolve({ok:!0,data:{shipping_results:FC.customFlatRates.shipping_results}})},10)})};
+    FC.customFlatRates.filterShippingOptions=function(a){if("number"==typeof a)for(var b=0;b<FC.customFlatRates.shipping_results.length;b++){if(FC.customFlatRates.shipping_results[b].service_id==a)return[b]}else{if("string"==typeof a){for(var d=[],c={},b=0;b<FC.customFlatRates.shipping_results.length;b++){var e=FC.customFlatRates.shipping_results[b];c[b]=e.method+" "+e.service_name}if("all"!=a.toLowerCase()){a=/(fedex|usps|ups)?\s?([\w\s]+)?/i.exec(a);if(void 0==a||""==a)return;for(b in c)void 0!=a[1]&&
+    ""!=a[1]&&-1==c[b].toLowerCase().indexOf(a[1].toLowerCase())?delete c[b]:void 0!=a[2]&&""!=a[2]&&-1==c[b].toLowerCase().indexOf(a[2].toLowerCase())&&delete c[b]}for(b in c)d.push(parseInt(b));return d}if("object"==typeof a){d=[];for(b=0;b<a.length;b++)for(c=0;c<FC.customFlatRates.shipping_results.length;c++)FC.customFlatRates.shipping_results[c].service_id==a[b]&&d.push(a[b]);return d}}};
+    FC.customFlatRates.modifyPrice=function(a,b){b=b.toString();var d=/([\+\-\=\*\/])?(\d+(?:\.\d+)?)(\%)?/.exec(b);a=parseFloat(a);var c=parseFloat(d[2]);void 0!=d[3]&&""!=d[3]&&(c=c/100*a);switch(void 0==d[1]&&""!=d[1]?"=":d[1]){case "+":a+=c;break;case "-":a-=c;break;case "/":a/=c;break;case "*":a*=c;break;default:a=c}return 0>a?0:a};
+    function requireShipping(){if(!FC.json.shipping_address.has_live_rate_shippable_products){if(FC.json.has_multiship)for(i=0;i<FC.json.multiship_data.length;i++)FC.json.multiship_data[i].has_live_rate_shippable_products=!0,0==FC.json.multiship_data[i].shipping_service_id&&(FC.json.show_address_entry=!0,"cart"==FC.json.context&&(FC.json.show_shipping_tbd=!0));FC.json.shipping_address.has_live_rate_shippable_products=!0;FC.json.has_current_live_rate_shipping=!0;FC.json.has_current_flat_rate_shipping=
+    !1;0==FC.json.shipping_address.shipping_service_id&&(FC.json.show_address_entry=!0,FC.json.show_shipping_tbd=!0);FC.Template(FC.json.context).clearOutput();FC[FC.json.context].render();$.each(FC.json.has_multiship?FC.json.multiship_data:[FC.json.shipping_address],function(a,b){FC.util.addressHasLocationInfo(b)&&0==b.shipping_results.length&&b.has_live_rate_shippable_products&&FC[FC.json.context].getShippingOptions({address:b})})}}FC.client.on("cart-item-quantity-update.done",requireShipping);
+    FC.client.on("cart-item-remove.done",requireShipping);FC.client.on("cart-coupon-add.done",requireShipping);FC.client.on("cart-coupon-remove.done",requireShipping);FC.client.on("customer-login.done",requireShipping);FC.client.on("checkout-submit",requireShipping);
+    {% if cart_is_fullpage or context == 'checkout' %}FC.client.on("ready.done",requireShipping);{% else %}requireShipping();{% endif %}
+})(FC, jQuery);
+</script>
+{% endif %}
